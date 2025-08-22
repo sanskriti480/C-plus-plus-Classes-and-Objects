@@ -12,6 +12,15 @@ class cuboid{
     int width;
     int length;
     
+    void input(){
+        cout<<"Enter height: ";
+        cin>>height;
+        cout<<"Enter width: ";
+        cin>>width;
+        cout<<"Enter length: ";
+        cin>>length;
+    }
+    
     int volume(){
         int v;
         v=height*width*length;
@@ -28,15 +37,9 @@ class cuboid{
 int main(){
     
     cuboid c1;
-    
-    cout<<"Enter height: ";
-    cin>>c1.height;
-    cout<<"Enter width: ";
-    cin>>c1.width;
-    cout<<"Enter length: ";
-    cin>>c1.length;
-
+    c1.input();
     c1.Display();
+    return 0;
 }
 
 /*Output
