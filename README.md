@@ -174,8 +174,11 @@ VS Code or Programiz Online C++ Compiler.
 - Declare three public integer data members: height, width, length and initialize them with 2, 3, and 5 respectively.
 - In main(), create an object c1 of class cuboid.
 - Calculate the volume using the formula:
+- 
   1.volume = height * width * length
+  
   2.by accessing the object’s public attributes.
+  
 - Display the calculated volume.
 - End the program.
 
@@ -188,8 +191,11 @@ VS Code or Programiz Online C++ Compiler.
 - Define a class cuboid.
 - Declare three public integer data members: height, width, length and initialize them with 2, 3, and 5 respectively.
 - Define a public member function volume() that:
+- 
   1.Calculates the volume: v = height * width * length
+  
   2.Returns v.
+  
 - In main(), create an object c1 of class cuboid.
 - Call the volume() function using the object c1 and store the result in vol.
 - Display vol.
@@ -204,8 +210,11 @@ VS Code or Programiz Online C++ Compiler.
 - Define a class cuboid.
 - Declare three private integer data members: height, width, length and initialize them with 10, 4, 6 respectively.
 - Define a public member function volume() that:
+- 
   1.Calculates the volume: v = height * width * length
+  
   2.Returns v.
+  
 - In main(), create an object c1 of class cuboid.
 - Call the volume() function using c1 to access private attributes indirectly.
 - Display the calculated volume.
@@ -220,14 +229,23 @@ VS Code or Programiz Online C++ Compiler.
 - Define a class cuboid.
 - Declare three public integer data members: height, width, length.
 - Define a public member function Input() that:
+- 
   1.Prompts the user to enter height, width, and length.
+  
   2.Stores the user input in the respective data members.
+  
 - Define a public member function volume() that:
+- 
   1.Calculates the volume: v = height * width * length
+  
   2.Returns v.
+  
 - Define a public member function disp() that:
+  
   1.Calls the volume() function
+  
   2.Displays the volume of the cuboid.
+  
 - In main(), create an object c1 of class cuboid.
 - Call c1.Input() to take input from the user.
 - Call c1.disp() to display the calculated volume.
