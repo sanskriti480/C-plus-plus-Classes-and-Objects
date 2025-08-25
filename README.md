@@ -52,11 +52,17 @@ VS Code or Programiz Online C++ Compiler.
 1.Data members → Variables that hold data.
 2.Member functions → Functions that define operations on data.
 - Example:
+
 class Student {
+
     int rollNo;          // data member
+  
     string name;         // data member
+  
 public:
+
     void display();      // member function
+    
 };
 
 ---
