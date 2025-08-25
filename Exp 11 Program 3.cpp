@@ -4,49 +4,33 @@
 //Experiment 11
 
 #include <iostream>
-using namespace std;
+using namespace std; 
 
 class cuboid{
-    public:
-    int height;
-    int width;
-    int length;
+    private : 
+    int height = 10 ;
+    int width = 4 ;
+    int length = 6 ;
     
-    void input(){
-        cout<<"Enter height: ";
-        cin>>height;
-        cout<<"Enter width: ";
-        cin>>width;
-        cout<<"Enter length: ";
-        cin>>length;
-    }
-    
+    public :
     int volume(){
-        int v;
-        v=height*width*length;
+        int v; 
+        v = height*width*length;
         return v;
     }
-    
-    void Display()
-    {
-        cout<<"Volume: "<<volume();
-    }
-    
 };
 
-int main(){
-    
+int main() {
+    // Defining the object c1
     cuboid c1;
-    c1.input();
-    c1.Display();
+    // Calling the public volume() [class method], thus the private attributes [height,width,length] can be accessed
+    int volume = c1.volume();
+    cout<<"Volume: "<<volume<<endl;
     return 0;
 }
 
 /*Output
 
-Enter height: 4
-Enter width: 2
-Enter length: 8
-Volume: 64
+Volume: 240
 */
 
