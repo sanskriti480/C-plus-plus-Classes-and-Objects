@@ -166,106 +166,97 @@ VS Code or Programiz Online C++ Compiler.
 
 ## Algorithms
 
-### Program 1 Increment of pointers
+### Program 1
 ---
 
-- Start
-- Declare variables of different data types:
-
-a as int
-
-b as float
-
-c as double
-
-d as bool
-- Declare pointers for each variable and store their addresses:
-
-aptr = &a
-
-bptr = &b
-
-cptr = &c
-
-dptr = &d
-- For each pointer:
-a. Print the address before increment.
-b. Increment the pointer by 1 (ptr++).
-c. Print the address after increment.
-- End.
+- Start the program.
+- Define a class cuboid.
+- Declare three public integer data members: height, width, length and initialize them with 2, 3, and 5 respectively.
+- In main(), create an object c1 of class cuboid.
+- Calculate the volume using the formula:
+  1.volume = height * width * length
+  2.by accessing the object’s public attributes.
+- Display the calculated volume.
+- End the program.
 
 ---
 
-### Program 2 Difference / Addition
+### Program 2
 ---
 
-- Start
-- Declare two integer variables x = 100 and y = 50.
-- Declare an integer pointer xptr and assign it the address of x.
-- Declare another integer pointer yptr and assign it the address of y.
-- Dereference both pointers and calculate the sum:
-
-sum = *xptr + *yptr.
-
-- Print the result → "Sum is: sum".
-- Dereference both pointers and calculate the difference:
-difference = *xptr - *yptr.
-- Print the result → "Difference is: difference".
-- End 
----
-
-### Program 3 Traversing array using pointer
----
-
-- Start
-- Declare an integer array arr[5] = {2, 4, 6, 8, 10}.
-- Initialize a pointer ptr to point to the last element of the array (arr + 4).
-- Use a for loop that runs from index i = 4 down to 0:
-  
-  Print the value pointed to by ptr (*ptr).
-  
-  Decrement the pointer (ptr--) so it moves to the previous element.
-- After the loop ends, all elements of the array are printed in reverse order.
-- End
+- Start the program.
+- Define a class cuboid.
+- Declare three public integer data members: height, width, length and initialize them with 2, 3, and 5 respectively.
+- Define a public member function volume() that:
+  1.Calculates the volume: v = height * width * length
+  2.Returns v.
+- In main(), create an object c1 of class cuboid.
+- Call the volume() function using the object c1 and store the result in vol.
+- Display vol.
+- End the program.
 
 ---
 
-### Program 4 Printing string using pointers
+### Program 3
 ---
 
-- Start
-- Declare a character array str[] = "Hello World".
-- Initialize a pointer ptr to point to the first character of the string (ptr = str).
-- Begin a while loop that runs until the character pointed to by ptr is the null terminator ('\0').
-- 
-Print the character at *ptr.
+- Start the program.
+- Define a class cuboid.
+- Declare three private integer data members: height, width, length and initialize them with 10, 4, 6 respectively.
+- Define a public member function volume() that:
+  1.Calculates the volume: v = height * width * length
+  2.Returns v.
+- In main(), create an object c1 of class cuboid.
+- Call the volume() function using c1 to access private attributes indirectly.
+- Display the calculated volume.
+- End the program.
 
-Increment the pointer (ptr++) to move to the next character.
-- When *ptr == '\0', exit the loop.
-- End
+---
+
+### Program 4 
+---
+
+- Start the program.
+- Define a class cuboid.
+- Declare three public integer data members: height, width, length.
+- Define a public member function Input() that:
+  1.Prompts the user to enter height, width, and length.
+  2.Stores the user input in the respective data members.
+- Define a public member function volume() that:
+  1.Calculates the volume: v = height * width * length
+  2.Returns v.
+- Define a public member function disp() that:
+  1.Calls the volume() function
+  2.Displays the volume of the cuboid.
+- In main(), create an object c1 of class cuboid.
+- Call c1.Input() to take input from the user.
+- Call c1.disp() to display the calculated volume.
+- End the program.
 
 ---
 
 ## Concepts Used  
 ---
 
-- Pointer declaration and initialization.
-- Dereferencing (* operator).
-- Address-of operator (&).
-- Pointer arithmetic (increment and decrement).
-- Array traversal using pointers.
-- Character array traversal.
-- Type-dependent pointer incrementation.
-- Null pointers and void pointers.
-- Memory representation of pointers.
+- Class Declaration – Defining a blueprint for objects.
+- Object Creation – Instantiating objects of a class.
+- Data Members – Variables inside a class (public/private).
+- Member Functions – Functions inside a class to perform operations.
+- Access Specifiers – public and private to control access.
+- Function Call – Calling member functions using objects.
+- User Input – Using cin to take input for object attributes.
+- Output – Using cout to display results.
+- Encapsulation – Hiding private data and accessing via public methods.
+- Volume Calculation Logic – Using multiplication formula for cuboid.
 
 ---
 
 ## Conclusion
 ---
 
-- In this experiment, we learned the use of pointers to access and manipulate data using memory addresses. 
-- We performed arithmetic operations, array reversal, and string traversal using pointers. 
-- This shows that pointers provide efficient memory access, flexibility, and are essential for advanced concepts like dynamic memory allocation.
+- These programs demonstrate the fundamental concepts of classes and objects in C++.
+- They show how data members and member functions work together to model real-world entities.
+- The programs highlight encapsulation, using private and public access specifiers to control data access.
+- Overall, they illustrate how C++ provides a structured and efficient way to perform operations on objects using class-based design.
 
 ---
