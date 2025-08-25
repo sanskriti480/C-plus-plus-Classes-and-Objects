@@ -51,108 +51,118 @@ VS Code or Programiz Online C++ Compiler.
 - A class contains:
 1.Data members → Variables that hold data.
 2.Member functions → Functions that define operations on data.
-- Example:
-
-class Student {
-
-    int rollNo;          // data member
-  
-    string name;         // data member
-  
-public:
-
-    void display();      // member function
-    
-};
 
 ---
 
-### Syntax:###  
-```
-Syntax:
-data_type *pointer_name;
-
-Examples:
-int *ptr; → Pointer to an integer.
-float *fptr; → Pointer to a float.
-char *cptr; → Pointer to a character.
-
-The data type of the pointer must match the type of variable it points to.
-
-```
-
-### How is pointer stored?  
+### Access Specifiers in Classes
 ---
-1. A pointer itself is stored like any other variable in memory.
-2. It occupies a fixed number of bytes (4 bytes in 32-bit systems, 8 bytes in 64-bit systems).
-3. The value stored inside a pointer is an address, not actual data.
-4. When dereferenced (*pointer), the CPU accesses the value located at that address.
+
+- They define how the members of a class can be accessed:
+- Public → Accessible from outside the class.
+- Private → Accessible only within the class (default).
+- Protected → Accessible in the class and its derived classes.
 
 ---
 
-### Types of pointers  
+### Encapsulation 
 ---
-1. Null Pointer – Points to nothing (int *ptr = NULL;).
-2. Void Pointer (Generic Pointer) – Can hold the address of any data type (void *ptr;).
-3. Dangling Pointer – Points to memory that has been freed/deallocated.
-4. Wild Pointer – An uninitialized pointer (points to random memory).
-5. Constant Pointer – Pointer cannot change the address it holds, but the value at that address can change (int * const ptr).
-6. Pointer to Constant – Pointer can change the address it holds, but cannot change the value (const int *ptr).
-7. Constant Pointer to Constant – Neither the pointer’s address nor the value can change (const int * const ptr).
-8. Function Pointer – Holds the address of a function (void (*fptr)()).
-9. Pointer to Pointer (Double Pointer) – Stores the address of another pointer (int **pp).
-10. Array Pointer – Points to the first element of an array (int *ptr = arr;).
+
+- Bundling data and methods together inside a class.
+- Prevents unauthorized access to data.
+- Achieved using private data members and public methods.
 
 ---
 
-### Pointer arithmetic rules  
+### Constructors 
 ---
 
-- Incrementing a pointer moves it to the next element of its type (ptr++).
-- Subtracting two pointers gives the number of elements between them.
-- Pointer arithmetic is valid only within the same array or memory block.
-
----
-
-### Advantages od pointers 
----
-- Dynamic Memory Allocation – Helps allocate and free memory at runtime using malloc, calloc, free (in C) or new/delete (in C++).
-- Efficient Array & String Handling – Makes it easier to traverse arrays and manipulate strings.
-- Function Arguments – Allows functions to modify actual variables (call by reference).
-- Data Structures – Essential for implementing linked lists, stacks, queues, trees, and graphs.
-- Memory Efficiency – Saves memory in some cases by directly working with memory addresses.
-- Hardware Interaction – Useful in system programming (e.g., accessing memory-mapped devices).
-- Function Pointers – Allow passing functions as arguments, enabling callbacks and flexibility in code.
+- A special member function of a class, automatically called when an object is created.
+- Used to initialize data members.
+- Has the same name as the class.
+- Types:
+  1.Default constructor
+  2.Parameterized constructor
+  3.Copy constructor
 
 ---
 
-### Disadvantages od pointers 
+### Destructors
 ---
-- Complexity – Pointers make the program logic harder to read and understand.
-- Errors & Bugs – Easy to make mistakes like dangling pointers, wild pointers, null dereferencing.
-- Security Issues – Improper use can lead to memory leaks, crashes, or vulnerabilities (buffer overflow).
-- Hard to Debug – Pointer-related errors are difficult to trace and fix.
-- Memory Management Risk – Programmer must manually allocate and deallocate memory; forgetting causes memory leaks.
-- Portability Issues – Direct memory manipulation may behave differently on different systems.
+
+- A special function with a ~ (tilde) before the class name.
+- Automatically called when an object goes out of scope.
+- Used to release resources (like memory, files).
 
 ---
 
-### Why are pointers better than arrays
+### Advantages of using classes
 ---
-- Arrays are fixed size, pointers allow dynamic size (runtime allocation).
-- Arrays are static & contiguous, pointers allow flexible data structures (linked list, trees).
-- Pointers give better memory efficiency and faster traversal/control.
+
+- Reusability → Write once, use many times.
+- Modularity → Breaks complex problems into smaller parts.
+- Security → Data hiding through encapsulation.
+- Abstraction → Only necessary details are visible to the user.
+- Flexibility → Easy to modify and extend programs.
 
 ---
 
-### Why are pointers better than strings
+### Objects
 ---
-- Strings in arrays are hard to resize, but pointers allow dynamic strings.
-- Pointers make string operations easier (traversal, function calls).
-- Pointers use less memory (allocate exact size, no wastage).
-- Passing strings via pointers is faster (just passes address).
+
+- An object is a real-world entity that has state and behavior.
+- In C++, an object is an instance of a class.
+- Objects are created using the class blueprint
 
 ---
+
+### Relationship Between Class and Object
+---
+
+- Class → Blueprint, defines the structure and behavior.
+- Object → Actual entity created using the class.
+- Analogy:
+1.Class = “Car template”
+2.Object = “My Toyota Corolla”
+
+---
+
+### Properties of Objects
+---
+
+- State (Attributes) → Represented by data members of the class.
+- Behavior (Methods) → Represented by member functions of the class.
+- Identity → Each object has a unique identity (stored at a unique memory location).
+
+---
+
+### Constructors and Objects
+---
+
+- Constructors initialize object data automatically when created.
+- Default constructor → Called automatically if no parameters are passed.
+- Parameterized constructor → Initializes object with specific values.
+- Copy constructor → Creates a new object as a copy of an existing object.
+
+---
+
+### Destructors and Objects
+---
+
+- Destructor is automatically called when an object goes out of scope.
+- Frees resources allocated to the object (memory, file handles, etc.).
+
+---
+
+### Advantages of using objects
+---
+
+- Code Reusability → Same class can create multiple objects.
+- Better Data Security → Data members can be private and accessed only via functions.
+- Easier Maintenance → Changes in class definition automatically affect all objects.
+- Real-World Modeling → Objects closely model real-world entities.
+
+---
+
 
 ## Algorithms
 
