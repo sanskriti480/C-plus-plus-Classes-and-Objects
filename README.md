@@ -174,7 +174,7 @@ VS Code or Programiz Online C++ Compiler.
 - Declare three public integer data members: height, width, length and initialize them with 2, 3, and 5 respectively.
 - In main(), create an object c1 of class cuboid.
 - Calculate the volume using the formula:
-- 
+  
   1.volume = height * width * length
   
   2.by accessing the object’s public attributes.
@@ -191,7 +191,7 @@ VS Code or Programiz Online C++ Compiler.
 - Define a class cuboid.
 - Declare three public integer data members: height, width, length and initialize them with 2, 3, and 5 respectively.
 - Define a public member function volume() that:
-- 
+  
   1.Calculates the volume: v = height * width * length
   
   2.Returns v.
@@ -210,7 +210,7 @@ VS Code or Programiz Online C++ Compiler.
 - Define a class cuboid.
 - Declare three private integer data members: height, width, length and initialize them with 10, 4, 6 respectively.
 - Define a public member function volume() that:
-- 
+  
   1.Calculates the volume: v = height * width * length
   
   2.Returns v.
@@ -229,13 +229,13 @@ VS Code or Programiz Online C++ Compiler.
 - Define a class cuboid.
 - Declare three public integer data members: height, width, length.
 - Define a public member function Input() that:
-- 
+  
   1.Prompts the user to enter height, width, and length.
   
   2.Stores the user input in the respective data members.
   
 - Define a public member function volume() that:
-- 
+  
   1.Calculates the volume: v = height * width * length
   
   2.Returns v.
